@@ -1,0 +1,34 @@
+from colorama import Fore
+
+# Initial purpose
+
+k = int(input("How much love do you need right now? (enter a number from 1 to ∞) "))
+print()
+
+for p in range(k):
+    print(f"{Fore.RED}I love you <3{Fore.WHITE}")
+
+print()
+print("See I do love you!")
+print()
+
+## Loop for love
+
+e = input("Do you need more love? (y/n) ").strip().lower()
+
+while e == 'y':
+    print()
+    z = int(input("How much more love do you need right now? (enter a number from 1 to ∞) "))
+
+    print()
+    for a in range(z): print(f"{Fore.RED}I love you <3{Fore.WHITE}")
+
+    print()
+    print("See I still love you!")
+    print()
+
+    e = input("Do you need more love? (y/n) ").strip().lower()
+
+print()
+if e == 'n':
+    print("Ok, bye beautiful, come back soon!")
